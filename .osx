@@ -1,3 +1,55 @@
+# OSX defaults by Kristian Frost
+## These defaults are gathered from searching the World Wide Web and collecting all the best defaults for Apple OSX.
+
+##########
+#  Misc  # 
+##########
+
 # Save Screenshots in a different location than default.
 ## OBS. Run killall SystemUIServer after changing the location.
-defaults write com.apple.screencapture location ~/
+defaults write com.apple.screencapture location ~/Desktop/ss
+ 
+############
+#  Finder  # 
+############
+
+# Always open everything in Finder's list view. This is important.
+defaults write com.apple.Finder FXPreferredViewStyle Nlsv
+
+# Disable window animations and Get Info animations
+defaults write com.apple.finder DisableAllAnimations -bool true
+
+# Show status bar
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# Show path bar
+defaults write com.apple.finder ShowPathbar -bool true
+
+# Disable the warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Avoid creating .DS_Store files on network volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+# Disable the warning before emptying the Trash
+defaults write com.apple.finder WarnOnEmptyTrash -bool false
+
+# Show the ~/Library folder
+chflags nohidden ~/Library
+
+##########
+#  DOCK  # 
+##########
+
+# Remove the auto-hiding Dock delay
+defaults write com.apple.dock autohide-delay -float 0
+
+# Remove the animation when hiding/showing the Dock
+defaults write com.apple.dock autohide-time-modifier -float 0
+ 
+############
+#  iTerm2  #
+############
+
+# Don’t display the annoying prompt when quitting iTerm
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
