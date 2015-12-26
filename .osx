@@ -1,6 +1,11 @@
 # OSX defaults by Kristian Frost
 ## These defaults are gathered from searching the World Wide Web and collecting all the best defaults for Apple OSX.
 
+# Sensible commands that are not defaults.
+
+# Enable trim on non Apple SSD's.
+sudo trimforce enable
+
 ##########
 #  Misc  # 
 ##########
