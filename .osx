@@ -1,0 +1,3 @@
+# Save Screenshots in a different location than default.
+## OBS. Run killall SystemUIServer after changing the location.
+defaults write com.apple.screencapture location ~/
