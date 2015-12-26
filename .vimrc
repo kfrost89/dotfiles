@@ -1,4 +1,8 @@
+let mapleader = ","
 set cursorline
+nmap <leader>ne :NERDTreeToggle<cr>
+nmap <leader>p :bp<cr>
+nmap <leader>n :bn<cr>
 set backspace=indent,eol,start
 inoremap jj <esc>
 set breakindent
@@ -51,6 +55,7 @@ colorscheme solarized
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+let g:ctrlp_show_hidden = 1
 
 " GitGutter
 "let g:gitgutter_realtime = 0
