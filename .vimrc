@@ -1,10 +1,8 @@
 let mapleader = ","
 set cursorline
 nmap <leader>ne :NERDTreeToggle<cr>
-nmap <leader>p :bp<cr>
-nmap <leader>n :bn<cr>
 set backspace=indent,eol,start
-inoremap jj <esc>
+inoremap jk <esc>
 set breakindent
 set number
 
@@ -39,9 +37,6 @@ syntax spell toplevel
 "Airline
 let g:airline#extensions#tabline#enabled = 1
 
-"Custom commands
-:command NE NERDTreeToggle
-
 "Color scheme
 let g:solarized_termtrans = 1
 set background=dark
@@ -56,7 +51,16 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 let g:ctrlp_show_hidden = 1
+let g:ctrlp_working_path_mode = 0
 
 " GitGutter
-"let g:gitgutter_realtime = 0
-"let g:gitgutter_eager = 0
+let g:gitgutter_realtime = 0
+let g:gitgutter_eager = 0
+
+" Backup, swap and undo dirs.
+set undodir=~/.vim/undo//
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+
+" Twig syntax highlight.
+au BufRead,BufNewFile *.twig set filetype=htmljinja
