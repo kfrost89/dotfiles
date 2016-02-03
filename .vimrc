@@ -58,9 +58,9 @@ let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
 
 " Backup, swap and undo dirs.
-set undodir=~/.vim/undo//
-set backupdir=~/.vim/backup//
-set directory=~/.vim/swap//
+"set undodir=~/.vim/undo//
+"set backupdir=~/.vim/backup//
+"set directory=~/.vim/swap//
 
 " Twig syntax highlight.
 au BufRead,BufNewFile *.twig set filetype=htmljinja
